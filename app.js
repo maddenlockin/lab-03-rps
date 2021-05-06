@@ -12,7 +12,9 @@ let winTotal = 0;
 let lossTotal = 0;
 // set event listeners 
 shoot.addEventListener('click', () => {
-
+    const selectedRadio = document.querySelector('input:checked');
+    const userThrow = selectedRadio.value;
+    let autoThrow = Math.ceil(Math.random() * 3);
 
 });
   // get user input
